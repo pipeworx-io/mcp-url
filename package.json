@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-url",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "URL parsing & building MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-url": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "url"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-url.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/url",
   "pipeworx": {
-    "sourceHash": "v1-68c9265330456c551de5a470e8920611acfe28adae4cbfe55a18d8be3e1576a0",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "mode": "gateway",
+    "slug": "url",
+    "gatewaySlug": "url",
+    "sourceHash": "v1-e01cb35f4c06d56430ed976ed2ce38eff1d5bcfc270fd85d7622af099d81582e",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }
