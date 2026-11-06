@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-url",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "URL parsing & building MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "url",
     "gatewaySlug": "url",
-    "sourceHash": "v1-e01cb35f4c06d56430ed976ed2ce38eff1d5bcfc270fd85d7622af099d81582e",
-    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
+    "sourceHash": "v1-4bd3d6e92922416d96481d67fce2aef3c64c3eced79357dec82ebd4f4ec31aa7",
+    "sourceCommit": "ca52e7ed1e1ccad897c2da1b0fa105edc0bc3b2e"
   }
 }
